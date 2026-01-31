@@ -1,0 +1,54 @@
+# Build and deploy Vite app (app/) to GitHub Pages (gh-pages branch)
+name: Build and deploy Vite app to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (auto-detect package manager)
+        run: |
+          cd app
+          if [ -f pnpm-lock.yaml ]; then
+            corepack enable
+            corepack prepare pnpm@latest --activate
+            pnpm install
+          elif [ -f yarn.lock ]; then
+            corepack enable
+            corepack prepare yarn@stable --activate
+            yarn install
+          else
+            npm ci
+          fi
+
+      - name: Build
+        run: |
+          cd app
+          if [ -f pnpm-lock.yaml ]; then
+            pnpm build
+          elif [ -f yarn.lock ]; then
+            yarn build
+          else
+            npm run build
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./app/dist
+          publish_branch: gh-pages
+          keep_history: false
