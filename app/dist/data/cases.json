@@ -1,0 +1,827 @@
+[
+  {
+    "id": "case-001",
+    "name": "GPT-4",
+    "slug": "openai-gpt4",
+    "company_name": "OpenAI",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+    "description": "GPT-4 是 OpenAI 推出的第四代大语言模型，支持文本和图像输入，在多项专业测试中达到人类水平。提供 API 服务和 ChatGPT Plus 订阅两种主要使用方式。",
+    "short_description": "OpenAI 第四代大语言模型，API + 订阅双轨变现",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "chain_subcategory": "大语言模型",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2015,
+    "headquarters": "San Francisco, USA",
+    "employee_count_range": "500-1000",
+    "valuation_amount": 80000000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2023-04-01",
+    "annual_revenue": 3400000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2024,
+    "user_count": "100M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-001",
+        "name": "API Token 计费",
+        "is_primary": true,
+        "pricing_details": {
+          "gpt4_turbo_input": 0.01,
+          "gpt4_turbo_output": 0.03,
+          "gpt4_input": 0.03,
+          "gpt4_output": 0.06,
+          "currency": "USD",
+          "unit": "per 1K tokens"
+        },
+        "evidence_links": [
+          {
+            "title": "OpenAI Pricing",
+            "url": "https://openai.com/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      },
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": false,
+        "pricing_details": {
+          "chatgpt_plus": 20,
+          "chatgpt_team": 25,
+          "currency": "USD",
+          "unit": "per user per month"
+        },
+        "evidence_links": [
+          {
+            "title": "ChatGPT Plus",
+            "url": "https://openai.com/chatgpt",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "研究阶段",
+        "period": "2015-2020",
+        "description": "专注 AI 研究，无商业化产品",
+        "monetization": "无"
+      },
+      {
+        "stage": "商业化启动",
+        "period": "2020-2022",
+        "description": "推出 GPT-3 API，开始按 Token 计费",
+        "monetization": "API Token 计费"
+      },
+      {
+        "stage": "规模化增长",
+        "period": "2022-至今",
+        "description": "ChatGPT 发布引爆市场，推出 Plus 订阅和企业版",
+        "monetization": "API + 订阅 + 企业版"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-002",
+        "name": "Claude",
+        "comparison": "定位更偏向企业安全和可解释性"
+      },
+      {
+        "id": "case-003",
+        "name": "Gemini",
+        "comparison": "Google 出品，与搜索和云服务深度整合"
+      }
+    ],
+    "view_count": 25800,
+    "like_count": 892,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "case-002",
+    "name": "Claude",
+    "slug": "anthropic-claude",
+    "company_name": "Anthropic",
+    "logo_url": "https://www.anthropic.com/images/anthropic-logo.svg",
+    "description": "Claude 是 Anthropic 开发的 AI 助手，强调安全性、可靠性和可解释性。提供 Claude 3 系列模型（Haiku/Sonnet/Opus），支持 API 和 Claude Pro 订阅。",
+    "short_description": "Anthropic 安全导向的大语言模型",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "chain_subcategory": "大语言模型",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2021,
+    "headquarters": "San Francisco, USA",
+    "employee_count_range": "100-500",
+    "valuation_amount": 18400000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2023-12-01",
+    "annual_revenue": 500000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2024,
+    "user_count": "10M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-001",
+        "name": "API Token 计费",
+        "is_primary": true,
+        "pricing_details": {
+          "claude_3_haiku_input": 0.00025,
+          "claude_3_haiku_output": 0.00125,
+          "claude_3_sonnet_input": 0.003,
+          "claude_3_sonnet_output": 0.015,
+          "claude_3_opus_input": 0.015,
+          "claude_3_opus_output": 0.075,
+          "currency": "USD",
+          "unit": "per 1K tokens"
+        },
+        "evidence_links": [
+          {
+            "title": "Anthropic Pricing",
+            "url": "https://www.anthropic.com/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      },
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": false,
+        "pricing_details": {
+          "claude_pro": 20,
+          "currency": "USD",
+          "unit": "per month"
+        },
+        "evidence_links": [
+          {
+            "title": "Claude Pro",
+            "url": "https://claude.ai/settings",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "成立与研发",
+        "period": "2021-2023",
+        "description": "由 OpenAI 前员工创立，专注 AI 安全研究",
+        "monetization": "无"
+      },
+      {
+        "stage": "产品化",
+        "period": "2023-至今",
+        "description": "推出 Claude API 和 Claude Pro",
+        "monetization": "API + 订阅"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-001",
+        "name": "GPT-4",
+        "comparison": "市场领导者，生态更成熟"
+      }
+    ],
+    "view_count": 18900,
+    "like_count": 567,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-14T09:30:00Z"
+  },
+  {
+    "id": "case-003",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "company_name": "Midjourney Inc.",
+    "logo_url": "https://www.midjourney.com/favicon.ico",
+    "description": "Midjourney 是领先的 AI 图像生成工具，以高质量艺术风格图像著称。通过 Discord 提供服务，采用订阅制变现。",
+    "short_description": "AI 图像生成工具，订阅制变现",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "chain_subcategory": "图像生成",
+    "company_type": "startup",
+    "company_type_label": "初创公司",
+    "founded_year": 2022,
+    "headquarters": "San Francisco, USA",
+    "employee_count_range": "10-50",
+    "valuation_amount": null,
+    "valuation_currency": null,
+    "valuation_date": null,
+    "annual_revenue": 200000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2023,
+    "user_count": "15M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": true,
+        "pricing_details": {
+          "basic": 10,
+          "standard": 30,
+          "pro": 60,
+          "mega": 120,
+          "currency": "USD",
+          "unit": "per month"
+        },
+        "evidence_links": [
+          {
+            "title": "Midjourney Pricing",
+            "url": "https://www.midjourney.com/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "Beta 测试",
+        "period": "2022-03 至 2022-07",
+        "description": "通过 Discord 免费测试",
+        "monetization": "免费"
+      },
+      {
+        "stage": "商业化",
+        "period": "2022-07 至今",
+        "description": "推出付费订阅计划",
+        "monetization": "订阅制"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-004",
+        "name": "Stable Diffusion",
+        "comparison": "开源免费，但 Midjourney 图像质量更高"
+      },
+      {
+        "id": "case-005",
+        "name": "DALL-E",
+        "comparison": "OpenAI 出品，与 ChatGPT 整合"
+      }
+    ],
+    "view_count": 22100,
+    "like_count": 734,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-13T14:20:00Z"
+  },
+  {
+    "id": "case-004",
+    "name": "智谱 GLM",
+    "slug": "zhipu-glm",
+    "company_name": "智谱 AI",
+    "logo_url": "https://www.zhipuai.cn/favicon.ico",
+    "description": "智谱 AI 推出的 GLM 系列大模型，包括 ChatGLM、GLM-4 等。提供 API 服务和 ChatGLM 客户端，是国内领先的大模型厂商之一。",
+    "short_description": "国内领先的大语言模型，API + 订阅变现",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "chain_subcategory": "大语言模型",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2019,
+    "headquarters": "北京, 中国",
+    "employee_count_range": "500-1000",
+    "valuation_amount": 2000000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2023-10-01",
+    "annual_revenue": null,
+    "revenue_currency": null,
+    "revenue_year": null,
+    "user_count": "100M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-001",
+        "name": "API Token 计费",
+        "is_primary": true,
+        "pricing_details": {
+          "glm4_input": 0.005,
+          "glm4_output": 0.01,
+          "currency": "CNY",
+          "unit": "per 1K tokens"
+        },
+        "evidence_links": [
+          {
+            "title": "智谱 AI 开放平台定价",
+            "url": "https://open.bigmodel.cn/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      },
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": false,
+        "pricing_details": {
+          "chatglm_plus": 29,
+          "currency": "CNY",
+          "unit": "per month"
+        },
+        "evidence_links": [
+          {
+            "title": "ChatGLM 会员",
+            "url": "https://chatglm.cn",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "研发阶段",
+        "period": "2019-2022",
+        "description": "清华大学背景团队研发 GLM 模型",
+        "monetization": "无"
+      },
+      {
+        "stage": "产品化",
+        "period": "2022-至今",
+        "description": "推出 ChatGLM 和开放平台 API",
+        "monetization": "API + 订阅"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-005",
+        "name": "文心一言",
+        "comparison": "百度出品，生态整合更深"
+      }
+    ],
+    "view_count": 15600,
+    "like_count": 423,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-12T11:00:00Z"
+  },
+  {
+    "id": "case-005",
+    "name": "NVIDIA DGX Cloud",
+    "slug": "nvidia-dgx-cloud",
+    "company_name": "NVIDIA",
+    "logo_url": "https://www.nvidia.com/favicon.ico",
+    "description": "NVIDIA DGX Cloud 是面向 AI 训练的 GPU 云服务，提供 H100、A100 等顶级 GPU 资源，按小时计费。",
+    "short_description": "NVIDIA 官方 GPU 云服务，按小时计费",
+    "chain_level": "compute",
+    "chain_level_label": "算力/云与芯片",
+    "chain_subcategory": "GPU 云服务",
+    "company_type": "public",
+    "company_type_label": "上市公司",
+    "founded_year": 1993,
+    "headquarters": "Santa Clara, USA",
+    "employee_count_range": "20000+",
+    "valuation_amount": null,
+    "valuation_currency": null,
+    "valuation_date": null,
+    "annual_revenue": 60092000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2024,
+    "user_count": "企业客户",
+    "monetization_methods": [
+      {
+        "method_id": "monet-005",
+        "name": "GPU 云服务",
+        "is_primary": true,
+        "pricing_details": {
+          "h100": 2.99,
+          "a100": 1.99,
+          "currency": "USD",
+          "unit": "per GPU hour"
+        },
+        "evidence_links": [
+          {
+            "title": "NVIDIA DGX Cloud Pricing",
+            "url": "https://www.nvidia.com/dgx-cloud/",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "硬件销售",
+        "period": "1993-2020",
+        "description": "主要销售 GPU 硬件",
+        "monetization": "硬件销售"
+      },
+      {
+        "stage": "云服务转型",
+        "period": "2020-至今",
+        "description": "推出 DGX Cloud，转型云服务模式",
+        "monetization": "GPU 云服务"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-006",
+        "name": "Lambda Cloud",
+        "comparison": "专注 AI 训练的 GPU 云服务商"
+      },
+      {
+        "id": "case-007",
+        "name": "CoreWeave",
+        "comparison": "GPU 云服务商，成本更低"
+      }
+    ],
+    "view_count": 19800,
+    "like_count": 612,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-11T16:45:00Z"
+  },
+  {
+    "id": "case-006",
+    "name": "Runway",
+    "slug": "runway-ml",
+    "company_name": "Runway AI, Inc.",
+    "logo_url": "https://runwayml.com/favicon.ico",
+    "description": "Runway 是领先的 AI 视频生成和编辑平台，提供 Gen-2 视频生成、图像编辑等功能。采用订阅制 + 信用点数的混合变现模式。",
+    "short_description": "AI 视频生成平台，订阅 + 信用点数",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "chain_subcategory": "视频生成",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2018,
+    "headquarters": "New York, USA",
+    "employee_count_range": "100-500",
+    "valuation_amount": 1500000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2023-06-01",
+    "annual_revenue": 50000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2023,
+    "user_count": "10M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": true,
+        "pricing_details": {
+          "basic": 12,
+          "standard": 28,
+          "pro": 76,
+          "unlimited": 144,
+          "currency": "USD",
+          "unit": "per month"
+        },
+        "evidence_links": [
+          {
+            "title": "Runway Pricing",
+            "url": "https://runwayml.com/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      },
+      {
+        "method_id": "monet-003",
+        "name": "用量包/预付费",
+        "is_primary": false,
+        "pricing_details": {
+          "credits": "订阅包含固定信用点数，额外可购买",
+          "currency": "USD",
+          "unit": "credits"
+        },
+        "evidence_links": [
+          {
+            "title": "Runway Credits",
+            "url": "https://runwayml.com/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "工具平台",
+        "period": "2018-2022",
+        "description": "提供机器学习模型运行平台",
+        "monetization": "订阅制"
+      },
+      {
+        "stage": "生成式 AI",
+        "period": "2022-至今",
+        "description": "推出 Gen-1/Gen-2 视频生成模型",
+        "monetization": "订阅 + 信用点数"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-003",
+        "name": "Midjourney",
+        "comparison": "专注图像生成，Runway 专注视频"
+      }
+    ],
+    "view_count": 16700,
+    "like_count": 534,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-10T13:30:00Z"
+  },
+  {
+    "id": "case-007",
+    "name": "Scale AI",
+    "slug": "scale-ai",
+    "company_name": "Scale AI, Inc.",
+    "logo_url": "https://scale.com/favicon.ico",
+    "description": "Scale AI 是全球领先的数据标注和 AI 训练数据提供商，为自动驾驶、大模型等提供高质量标注数据。",
+    "short_description": "数据标注与 AI 训练数据服务",
+    "chain_level": "data",
+    "chain_level_label": "数据",
+    "chain_subcategory": "数据标注",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2016,
+    "headquarters": "San Francisco, USA",
+    "employee_count_range": "1000-5000",
+    "valuation_amount": 7300000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2021-04-01",
+    "annual_revenue": 500000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2023,
+    "user_count": "企业客户",
+    "monetization_methods": [
+      {
+        "method_id": "monet-009",
+        "name": "数据标注与售卖",
+        "is_primary": true,
+        "pricing_details": {
+          "2d_labeling": "per image",
+          "3d_labeling": "per frame",
+          "llm_data": "per record",
+          "currency": "USD",
+          "unit": "custom pricing"
+        },
+        "evidence_links": [
+          {
+            "title": "Scale AI Services",
+            "url": "https://scale.com",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "数据标注",
+        "period": "2016-2020",
+        "description": "专注自动驾驶数据标注",
+        "monetization": "数据标注服务"
+      },
+      {
+        "stage": "多元化",
+        "period": "2020-至今",
+        "description": "拓展到大模型、政府、电商等领域",
+        "monetization": "数据标注 + Scale Generative AI Platform"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-008",
+        "name": "Appen",
+        "comparison": "老牌数据标注公司"
+      }
+    ],
+    "view_count": 14500,
+    "like_count": 456,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-09T10:15:00Z"
+  },
+  {
+    "id": "case-008",
+    "name": "Jasper",
+    "slug": "jasper-ai",
+    "company_name": "Jasper AI, Inc.",
+    "logo_url": "https://www.jasper.ai/favicon.ico",
+    "description": "Jasper 是面向营销团队的 AI 写作助手，帮助生成博客、广告文案、社交媒体内容等。采用订阅制变现。",
+    "short_description": "AI 营销写作助手，订阅制变现",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "chain_subcategory": "AI 写作",
+    "company_type": "unicorn",
+    "company_type_label": "独角兽",
+    "founded_year": 2021,
+    "headquarters": "Austin, USA",
+    "employee_count_range": "100-500",
+    "valuation_amount": 1500000000,
+    "valuation_currency": "USD",
+    "valuation_date": "2022-10-01",
+    "annual_revenue": 80000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2023,
+    "user_count": "100K+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": true,
+        "pricing_details": {
+          "creator": 39,
+          "teams": 99,
+          "business": "custom",
+          "currency": "USD",
+          "unit": "per month"
+        },
+        "evidence_links": [
+          {
+            "title": "Jasper Pricing",
+            "url": "https://www.jasper.ai/pricing",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "快速增长",
+        "period": "2021-2022",
+        "description": "基于 GPT-3 推出 Jasper，快速获取用户",
+        "monetization": "订阅制"
+      },
+      {
+        "stage": "调整期",
+        "period": "2022-至今",
+        "description": "面临 ChatGPT 竞争，裁员调整",
+        "monetization": "订阅制 + 企业版"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-009",
+        "name": "Copy.ai",
+        "comparison": "定位更偏向中小企业"
+      }
+    ],
+    "view_count": 13200,
+    "like_count": 389,
+    "status": "published",
+    "is_featured": false,
+    "updated_at": "2024-01-08T09:00:00Z"
+  },
+  {
+    "id": "case-009",
+    "name": "商汤科技",
+    "slug": "sensetime",
+    "company_name": "商汤科技",
+    "logo_url": "https://www.sensetime.com/favicon.ico",
+    "description": "商汤科技是中国领先的 AI 公司，提供计算机视觉、大模型等 AI 产品和解决方案，采用项目制 + 软件授权变现。",
+    "short_description": "中国 AI 领军企业，项目制 + 授权变现",
+    "chain_level": "service",
+    "chain_level_label": "服务/集成",
+    "chain_subcategory": "AI 解决方案",
+    "company_type": "public",
+    "company_type_label": "上市公司",
+    "founded_year": 2014,
+    "headquarters": "上海, 中国",
+    "employee_count_range": "5000+",
+    "valuation_amount": null,
+    "valuation_currency": null,
+    "valuation_date": null,
+    "annual_revenue": 2270000000,
+    "revenue_currency": "CNY",
+    "revenue_year": 2023,
+    "user_count": "企业客户",
+    "monetization_methods": [
+      {
+        "method_id": "monet-008",
+        "name": "项目制/解决方案",
+        "is_primary": true,
+        "pricing_details": {
+          "smart_city": "项目制",
+          "smart_auto": "项目制",
+          "currency": "CNY",
+          "unit": "per project"
+        },
+        "evidence_links": [
+          {
+            "title": "商汤科技年报",
+            "url": "https://www.sensetime.com/investor",
+            "type": "financial_report"
+          }
+        ]
+      },
+      {
+        "method_id": "monet-004",
+        "name": "企业版/私有化部署",
+        "is_primary": false,
+        "pricing_details": {
+          "sensechat": "企业授权",
+          "currency": "CNY",
+          "unit": "license"
+        },
+        "evidence_links": [
+          {
+            "title": "商汤日日新",
+            "url": "https://www.sensetime.com/cn/sensenova",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "计算机视觉",
+        "period": "2014-2022",
+        "description": "专注人脸识别、智慧城市等 CV 应用",
+        "monetization": "项目制"
+      },
+      {
+        "stage": "大模型转型",
+        "period": "2022-至今",
+        "description": "推出日日新大模型体系",
+        "monetization": "项目制 + 模型授权"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-010",
+        "name": "旷视科技",
+        "comparison": "同为 AI 四小龙"
+      }
+    ],
+    "view_count": 11800,
+    "like_count": 345,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-07T15:30:00Z"
+  },
+  {
+    "id": "case-010",
+    "name": "GitHub Copilot",
+    "slug": "github-copilot",
+    "company_name": "GitHub (Microsoft)",
+    "logo_url": "https://github.com/favicon.ico",
+    "description": "GitHub Copilot 是 AI 编程助手，基于 OpenAI Codex 模型，提供代码补全、生成、解释等功能。采用订阅制变现。",
+    "short_description": "AI 编程助手，订阅制变现",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "chain_subcategory": "代码助手",
+    "company_type": "enterprise",
+    "company_type_label": "大型企业",
+    "founded_year": 2021,
+    "headquarters": "San Francisco, USA",
+    "employee_count_range": "N/A",
+    "valuation_amount": null,
+    "valuation_currency": null,
+    "valuation_date": null,
+    "annual_revenue": 1000000000,
+    "revenue_currency": "USD",
+    "revenue_year": 2024,
+    "user_count": "1M+",
+    "monetization_methods": [
+      {
+        "method_id": "monet-002",
+        "name": "订阅制",
+        "is_primary": true,
+        "pricing_details": {
+          "individual": 10,
+          "business": 19,
+          "enterprise": 39,
+          "currency": "USD",
+          "unit": "per user per month"
+        },
+        "evidence_links": [
+          {
+            "title": "GitHub Copilot Pricing",
+            "url": "https://github.com/features/copilot",
+            "type": "pricing_page"
+          }
+        ]
+      }
+    ],
+    "growth_path": [
+      {
+        "stage": "技术预览",
+        "period": "2021-2022",
+        "description": "免费技术预览版",
+        "monetization": "免费"
+      },
+      {
+        "stage": "商业化",
+        "period": "2022-至今",
+        "description": "推出个人版、企业版付费订阅",
+        "monetization": "订阅制"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "case-011",
+        "name": "Amazon CodeWhisperer",
+        "comparison": "AWS 出品，与云服务整合"
+      },
+      {
+        "id": "case-012",
+        "name": "Tabnine",
+        "comparison": "专注代码补全，支持更多 IDE"
+      }
+    ],
+    "view_count": 24500,
+    "like_count": 823,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-06T11:20:00Z"
+  }
+]

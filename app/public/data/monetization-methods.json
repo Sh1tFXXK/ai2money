@@ -1,0 +1,594 @@
+[
+  {
+    "id": "monet-001",
+    "name": "API Token 计费",
+    "slug": "api-token-billing",
+    "definition": "按 API 调用消耗的 Token 数量进行计费的模式。输入和输出 Token 通常分别计价，用户根据实际使用量付费。",
+    "short_description": "按 API 调用 Token 数量计费，适合开发者集成",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "target_audience": ["tod"],
+    "target_audience_labels": ["开发者"],
+    "billing_unit": ["token"],
+    "billing_unit_labels": ["Token"],
+    "price_anchor_min": 0.001,
+    "price_anchor_max": 0.2,
+    "price_currency": "USD",
+    "price_unit": "per 1K tokens",
+    "cost_structure": {
+      "gpu_compute": 0.45,
+      "infrastructure": 0.15,
+      "research": 0.15,
+      "operations": 0.15,
+      "other": 0.1
+    },
+    "gross_margin_level": "high",
+    "margin_sensitivity": ["算力成本波动", "模型推理效率", "GPU 供应价格"],
+    "scalability_level": "high",
+    "data_dependency_level": "low",
+    "compute_cost_sensitivity": "high",
+    "sales_model": ["self_service", "inside_sales"],
+    "advantages": [
+      "使用与付费完全挂钩，用户接受度高",
+      "易于扩展，支持大规模用户",
+      "收入与使用量线性增长",
+      "开发者集成门槛低"
+    ],
+    "disadvantages": [
+      "算力成本波动影响毛利率",
+      "用户成本难以预估",
+      "需要精确的计量系统",
+      "价格战风险高"
+    ],
+    "applicable_scenarios": [
+      "大语言模型 API 服务",
+      "图像生成 API",
+      "语音识别与合成",
+      "代码生成工具"
+    ],
+    "common_combinations": ["monet-002", "monet-003"],
+    "risk_points": [
+      "算力成本上涨可能侵蚀利润",
+      "竞争对手价格战",
+      "Token 计量准确性争议",
+      "大客户议价能力强"
+    ],
+    "view_count": 12580,
+    "like_count": 342,
+    "case_count": 8,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "monet-002",
+    "name": "订阅制",
+    "slug": "subscription",
+    "definition": "用户按月或按年支付固定费用，获得产品或服务的访问权限。通常包含分级订阅（Free/Basic/Pro/Enterprise）。",
+    "short_description": "按月/年固定收费，提供稳定现金流",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "target_audience": ["tob", "toc"],
+    "target_audience_labels": ["企业", "消费者"],
+    "billing_unit": ["subscription"],
+    "billing_unit_labels": ["订阅"],
+    "price_anchor_min": 10,
+    "price_anchor_max": 500,
+    "price_currency": "USD",
+    "price_unit": "per month",
+    "cost_structure": {
+      "infrastructure": 0.25,
+      "customer_acquisition": 0.3,
+      "operations": 0.25,
+      "support": 0.2
+    },
+    "gross_margin_level": "high",
+    "margin_sensitivity": ["客户获取成本", "用户留存率", "客服成本"],
+    "scalability_level": "high",
+    "data_dependency_level": "medium",
+    "compute_cost_sensitivity": "medium",
+    "sales_model": ["self_service", "inside_sales"],
+    "advantages": [
+      "可预测的经常性收入",
+      "客户生命周期价值可计算",
+      "用户粘性高",
+      "便于财务规划"
+    ],
+    "disadvantages": [
+      "客户获取成本较高",
+      "需要持续提供价值",
+      "取消订阅流失风险",
+      "定价策略复杂"
+    ],
+    "applicable_scenarios": [
+      "AI 写作助手",
+      "设计工具",
+      "代码助手",
+      "AI 教育平台"
+    ],
+    "common_combinations": ["monet-001", "monet-004"],
+    "risk_points": [
+      "用户留存率下降",
+      "市场竞争加剧",
+      "功能价值感知下降"
+    ],
+    "view_count": 9870,
+    "like_count": 256,
+    "case_count": 12,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-14T09:30:00Z"
+  },
+  {
+    "id": "monet-003",
+    "name": "用量包/预付费",
+    "slug": "usage-package",
+    "definition": "用户预先购买一定数量的使用额度（Token、次数、时长），在有效期内消耗。通常购买量越大单价越低。",
+    "short_description": "预购买额度，量大优惠",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "target_audience": ["tob", "tod"],
+    "target_audience_labels": ["企业", "开发者"],
+    "billing_unit": ["usage"],
+    "billing_unit_labels": ["用量"],
+    "price_anchor_min": 5,
+    "price_anchor_max": 10000,
+    "price_currency": "USD",
+    "price_unit": "per package",
+    "cost_structure": {
+      "gpu_compute": 0.4,
+      "infrastructure": 0.2,
+      "operations": 0.25,
+      "other": 0.15
+    },
+    "gross_margin_level": "medium",
+    "margin_sensitivity": ["预付款资金占用", "使用率预估", "过期作废率"],
+    "scalability_level": "high",
+    "data_dependency_level": "low",
+    "compute_cost_sensitivity": "medium",
+    "sales_model": ["self_service", "inside_sales"],
+    "advantages": [
+      "提前锁定收入",
+      "改善现金流",
+      "降低用户使用心理门槛",
+      "量大优惠吸引大客户"
+    ],
+    "disadvantages": [
+      "用户可能过度购买导致不满",
+      "过期争议",
+      "需要管理额度系统",
+      "使用率不确定影响收入确认"
+    ],
+    "applicable_scenarios": [
+      "API 服务",
+      "图像生成",
+      "语音合成",
+      "视频处理"
+    ],
+    "common_combinations": ["monet-001"],
+    "risk_points": [
+      "用户购买后长期不使用",
+      "大额退款请求",
+      "额度系统设计复杂"
+    ],
+    "view_count": 6540,
+    "like_count": 178,
+    "case_count": 6,
+    "status": "published",
+    "is_featured": false,
+    "updated_at": "2024-01-13T14:20:00Z"
+  },
+  {
+    "id": "monet-004",
+    "name": "企业版/私有化部署",
+    "slug": "enterprise-private",
+    "definition": "面向企业客户的高级版本，提供私有化部署、定制开发、专属支持、SLA 保障等企业级服务。",
+    "short_description": "面向企业的高级版本，支持私有化部署",
+    "chain_level": "model",
+    "chain_level_label": "模型",
+    "target_audience": ["tob"],
+    "target_audience_labels": ["企业"],
+    "billing_unit": ["license", "subscription"],
+    "billing_unit_labels": ["授权费", "订阅"],
+    "price_anchor_min": 10000,
+    "price_anchor_max": 1000000,
+    "price_currency": "USD",
+    "price_unit": "per year",
+    "cost_structure": {
+      "sales": 0.25,
+      "implementation": 0.3,
+      "support": 0.25,
+      "infrastructure": 0.2
+    },
+    "gross_margin_level": "very_high",
+    "margin_sensitivity": ["销售周期", "定制化成本", "售后服务成本"],
+    "scalability_level": "low",
+    "data_dependency_level": "medium",
+    "compute_cost_sensitivity": "low",
+    "sales_model": ["field_sales"],
+    "advantages": [
+      "客单价高",
+      "客户粘性极强",
+      "竞争壁垒高",
+      "毛利率高"
+    ],
+    "disadvantages": [
+      "销售周期长（3-12个月）",
+      "需要专业销售团队",
+      "定制化成本高",
+      "难以规模化"
+    ],
+    "applicable_scenarios": [
+      "金融、医疗等敏感行业",
+      "大型企业内部系统",
+      "政府项目",
+      "对数据安全要求高的客户"
+    ],
+    "common_combinations": ["monet-002", "monet-010"],
+    "risk_points": [
+      "大客户依赖风险",
+      "回款周期长",
+      "定制化维护成本高"
+    ],
+    "view_count": 8230,
+    "like_count": 312,
+    "case_count": 5,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-12T11:00:00Z"
+  },
+  {
+    "id": "monet-005",
+    "name": "GPU 云服务",
+    "slug": "gpu-cloud",
+    "definition": "按 GPU 使用时长（小时）计费，提供 AI 训练和推理所需的算力资源。支持多种 GPU 型号和配置。",
+    "short_description": "按 GPU 小时计费，提供算力资源",
+    "chain_level": "compute",
+    "chain_level_label": "算力/云与芯片",
+    "target_audience": ["tob", "tod"],
+    "target_audience_labels": ["企业", "开发者"],
+    "billing_unit": ["gpu_hour"],
+    "billing_unit_labels": ["GPU-hour"],
+    "price_anchor_min": 0.5,
+    "price_anchor_max": 50,
+    "price_currency": "USD",
+    "price_unit": "per GPU hour",
+    "cost_structure": {
+      "hardware": 0.5,
+      "data_center": 0.2,
+      "operations": 0.2,
+      "other": 0.1
+    },
+    "gross_margin_level": "medium",
+    "margin_sensitivity": ["GPU 采购成本", "数据中心成本", "利用率"],
+    "scalability_level": "high",
+    "data_dependency_level": "low",
+    "compute_cost_sensitivity": "high",
+    "sales_model": ["self_service", "inside_sales"],
+    "advantages": [
+      "需求刚性，AI 发展必需",
+      "规模效应明显",
+      "技术壁垒高",
+      "客户粘性强"
+    ],
+    "disadvantages": [
+      "资本开支巨大",
+      "GPU 供应受限",
+      "价格竞争激烈",
+      "利用率波动大"
+    ],
+    "applicable_scenarios": [
+      "模型训练",
+      "模型推理",
+      "科学计算",
+      "图形渲染"
+    ],
+    "common_combinations": ["monet-006"],
+    "risk_points": [
+      "GPU 供应链风险",
+      "价格战",
+      "技术迭代风险"
+    ],
+    "view_count": 11200,
+    "like_count": 289,
+    "case_count": 7,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-11T16:45:00Z"
+  },
+  {
+    "id": "monet-006",
+    "name": "模型微调服务",
+    "slug": "model-fine-tuning",
+    "definition": "提供模型微调平台和工具，帮助客户基于基础模型使用自有数据进行微调训练，按训练时长或模型部署收费。",
+    "short_description": "提供模型微调平台和训练服务",
+    "chain_level": "toolchain",
+    "chain_level_label": "工具链/中间件",
+    "target_audience": ["tob", "tod"],
+    "target_audience_labels": ["企业", "开发者"],
+    "billing_unit": ["gpu_hour", "usage"],
+    "billing_unit_labels": ["GPU-hour", "用量"],
+    "price_anchor_min": 1,
+    "price_anchor_max": 100,
+    "price_currency": "USD",
+    "price_unit": "per training hour",
+    "cost_structure": {
+      "gpu_compute": 0.5,
+      "platform": 0.2,
+      "support": 0.2,
+      "other": 0.1
+    },
+    "gross_margin_level": "high",
+    "margin_sensitivity": ["训练成功率", "GPU 利用率", "技术支持成本"],
+    "scalability_level": "medium",
+    "data_dependency_level": "medium",
+    "compute_cost_sensitivity": "high",
+    "sales_model": ["self_service", "inside_sales"],
+    "advantages": [
+      "满足定制化需求",
+      "客单价较高",
+      "技术门槛形成壁垒",
+      "客户粘性强"
+    ],
+    "disadvantages": [
+      "需要专业技术支持",
+      "训练失败率高",
+      "客户教育成本高"
+    ],
+    "applicable_scenarios": [
+      "垂直领域模型定制",
+      "企业内部知识库",
+      "特定风格生成",
+      "行业专用模型"
+    ],
+    "common_combinations": ["monet-005", "monet-001"],
+    "risk_points": [
+      "训练任务失败",
+      "客户数据隐私",
+      "技术门槛高"
+    ],
+    "view_count": 5670,
+    "like_count": 198,
+    "case_count": 4,
+    "status": "published",
+    "is_featured": false,
+    "updated_at": "2024-01-10T13:30:00Z"
+  },
+  {
+    "id": "monet-007",
+    "name": "平台抽佣",
+    "slug": "platform-commission",
+    "definition": "作为平台撮合供需双方，从交易中抽取一定比例的佣金。常见于 AI 应用商店、模型市场等。",
+    "short_description": "从平台交易中抽取佣金",
+    "chain_level": "application",
+    "chain_level_label": "应用",
+    "target_audience": ["tob", "toc"],
+    "target_audience_labels": ["企业", "消费者"],
+    "billing_unit": ["commission"],
+    "billing_unit_labels": ["抽佣"],
+    "price_anchor_min": 5,
+    "price_anchor_max": 30,
+    "price_currency": "USD",
+    "price_unit": "percentage of transaction",
+    "cost_structure": {
+      "platform": 0.3,
+      "operations": 0.3,
+      "marketing": 0.25,
+      "other": 0.15
+    },
+    "gross_margin_level": "very_high",
+    "margin_sensitivity": ["平台交易量", "双边网络效应", "竞争平台"],
+    "scalability_level": "high",
+    "data_dependency_level": "low",
+    "compute_cost_sensitivity": "low",
+    "sales_model": ["self_service"],
+    "advantages": [
+      "轻资产模式",
+      "网络效应强",
+      "边际成本低",
+      "可扩展性强"
+    ],
+    "disadvantages": [
+      "需要建立双边市场",
+      "冷启动困难",
+      "平台治理复杂",
+      "跳单风险"
+    ],
+    "applicable_scenarios": [
+      "AI 应用商店",
+      "模型市场",
+      "AI 服务众包平台",
+      "数据交易平台"
+    ],
+    "common_combinations": ["monet-002"],
+    "risk_points": [
+      "双边市场冷启动",
+      "供需不平衡",
+      "平台治理成本"
+    ],
+    "view_count": 7890,
+    "like_count": 234,
+    "case_count": 3,
+    "status": "published",
+    "is_featured": false,
+    "updated_at": "2024-01-09T10:15:00Z"
+  },
+  {
+    "id": "monet-008",
+    "name": "项目制/解决方案",
+    "slug": "project-based",
+    "definition": "根据客户需求提供定制化 AI 解决方案，按项目整体报价收费。包含咨询、开发、部署、维护等全流程服务。",
+    "short_description": "定制化项目，整体报价",
+    "chain_level": "service",
+    "chain_level_label": "服务/集成",
+    "target_audience": ["tob"],
+    "target_audience_labels": ["企业"],
+    "billing_unit": ["project"],
+    "billing_unit_labels": ["项目制"],
+    "price_anchor_min": 50000,
+    "price_anchor_max": 10000000,
+    "price_currency": "USD",
+    "price_unit": "per project",
+    "cost_structure": {
+      "personnel": 0.5,
+      "implementation": 0.25,
+      "sales": 0.15,
+      "other": 0.1
+    },
+    "gross_margin_level": "medium",
+    "margin_sensitivity": ["项目范围控制", "交付周期", "人力成本"],
+    "scalability_level": "low",
+    "data_dependency_level": "medium",
+    "compute_cost_sensitivity": "low",
+    "sales_model": ["field_sales"],
+    "advantages": [
+      "客单价高",
+      "利润空间大",
+      "客户关系深入",
+      "可积累行业经验"
+    ],
+    "disadvantages": [
+      "难以规模化",
+      "项目风险高",
+      "人力依赖重",
+      "交付压力大"
+    ],
+    "applicable_scenarios": [
+      "企业数字化转型",
+      "行业 AI 解决方案",
+      "智能客服系统",
+      "AI 质检系统"
+    ],
+    "common_combinations": ["monet-004", "monet-010"],
+    "risk_points": [
+      "项目延期",
+      "需求变更",
+      "验收争议",
+      "回款风险"
+    ],
+    "view_count": 9230,
+    "like_count": 267,
+    "case_count": 6,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-08T09:00:00Z"
+  },
+  {
+    "id": "monet-009",
+    "name": "数据标注与售卖",
+    "slug": "data-labeling",
+    "definition": "提供数据标注服务，或销售高质量训练数据集。按数据量、标注复杂度或数据集授权收费。",
+    "short_description": "数据标注服务或数据集销售",
+    "chain_level": "data",
+    "chain_level_label": "数据",
+    "target_audience": ["tob"],
+    "target_audience_labels": ["企业"],
+    "billing_unit": ["usage", "license"],
+    "billing_unit_labels": ["用量", "授权费"],
+    "price_anchor_min": 0.01,
+    "price_anchor_max": 10,
+    "price_currency": "USD",
+    "price_unit": "per image/record",
+    "cost_structure": {
+      "labor": 0.6,
+      "platform": 0.2,
+      "quality_control": 0.15,
+      "other": 0.05
+    },
+    "gross_margin_level": "medium",
+    "margin_sensitivity": ["标注人员成本", "质量控制成本", "数据需求波动"],
+    "scalability_level": "medium",
+    "data_dependency_level": "high",
+    "compute_cost_sensitivity": "low",
+    "sales_model": ["inside_sales", "field_sales"],
+    "advantages": [
+      "AI 发展刚需",
+      "市场持续增长",
+      "技术门槛相对较低",
+      "可全球化布局"
+    ],
+    "disadvantages": [
+      "人力成本占比高",
+      "质量控制难度大",
+      "价格竞争激烈",
+      "自动化标注冲击"
+    ],
+    "applicable_scenarios": [
+      "自动驾驶数据标注",
+      "医疗影像标注",
+      "语音识别数据集",
+      "多模态训练数据"
+    ],
+    "common_combinations": ["monet-008"],
+    "risk_points": [
+      "自动化标注技术冲击",
+      "人力成本上涨",
+      "数据隐私合规"
+    ],
+    "view_count": 6780,
+    "like_count": 189,
+    "case_count": 4,
+    "status": "published",
+    "is_featured": false,
+    "updated_at": "2024-01-07T15:30:00Z"
+  },
+  {
+    "id": "monet-010",
+    "name": "效果付费/分成",
+    "slug": "performance-based",
+    "definition": "按 AI 带来的实际效果收费，如转化率提升、成本节约、收入增长等。通常采用基础费用 + 效果分成的混合模式。",
+    "short_description": "按实际效果收费，风险共担",
+    "chain_level": "service",
+    "chain_level_label": "服务/集成",
+    "target_audience": ["tob"],
+    "target_audience_labels": ["企业"],
+    "billing_unit": ["performance"],
+    "billing_unit_labels": ["效果付费"],
+    "price_anchor_min": 1000,
+    "price_anchor_max": 1000000,
+    "price_currency": "USD",
+    "price_unit": "per result",
+    "cost_structure": {
+      "implementation": 0.4,
+      "operations": 0.3,
+      "risk_reserve": 0.2,
+      "other": 0.1
+    },
+    "gross_margin_level": "medium",
+    "margin_sensitivity": ["效果衡量标准", "客户配合度", "效果归因"],
+    "scalability_level": "low",
+    "data_dependency_level": "high",
+    "compute_cost_sensitivity": "medium",
+    "sales_model": ["field_sales"],
+    "advantages": [
+      "客户接受度高（风险共担）",
+      "与客户利益一致",
+      "客单价潜力大",
+      "竞争差异化"
+    ],
+    "disadvantages": [
+      "效果衡量复杂",
+      "客户配合度要求高",
+      "收入不稳定",
+      "纠纷风险高"
+    ],
+    "applicable_scenarios": [
+      "智能营销",
+      "智能客服",
+      "销售预测",
+      "供应链优化"
+    ],
+    "common_combinations": ["monet-008"],
+    "risk_points": [
+      "效果归因争议",
+      "客户配合度不足",
+      "收入不可预测"
+    ],
+    "view_count": 8450,
+    "like_count": 278,
+    "case_count": 3,
+    "status": "published",
+    "is_featured": true,
+    "updated_at": "2024-01-06T11:20:00Z"
+  }
+]

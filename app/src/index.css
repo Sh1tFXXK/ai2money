@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 33% 95%;
+    --foreground: 30 20% 25%;
+    --card: 43 33% 97%;
+    --card-foreground: 30 20% 25%;
+    --popover: 43 33% 97%;
+    --popover-foreground: 30 20% 25%;
+    --primary: 145 23% 53%;
+    --primary-foreground: 43 33% 97%;
+    --secondary: 200 28% 60%;
+    --secondary-foreground: 43 33% 97%;
+    --muted: 43 20% 90%;
+    --muted-foreground: 30 15% 45%;
+    --accent: 42 45% 59%;
+    --accent-foreground: 30 20% 25%;
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 43 33% 97%;
+    --border: 43 20% 85%;
+    --input: 43 20% 88%;
+    --ring: 145 23% 53%;
+    --radius: 0.5rem;
+    --sidebar-background: 43 33% 97%;
+    --sidebar-foreground: 30 20% 25%;
+    --sidebar-primary: 145 23% 53%;
+    --sidebar-primary-foreground: 43 33% 97%;
+    --sidebar-accent: 43 25% 92%;
+    --sidebar-accent-foreground: 30 20% 25%;
+    --sidebar-border: 43 20% 88%;
+    --sidebar-ring: 145 23% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream-50 text-earth-600 font-sans antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(107, 159, 127, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(123, 163, 184, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .elegant-card {
+    @apply bg-white/80 backdrop-blur-sm border border-cream-300/50 rounded-lg shadow-elegant;
+  }
+  
+  .elegant-card-hover {
+    @apply elegant-card transition-all duration-300 hover:shadow-elegant-lg hover:border-sage-300/50;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif font-semibold text-earth-600;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-earth-400 font-light;
+  }
+  
+  .gold-accent {
+    @apply text-gold-DEFAULT;
+  }
+  
+  .sage-gradient {
+    background: linear-gradient(135deg, #6B9F7F 0%, #8FB89E 100%);
+  }
+  
+  .sky-gradient {
+    background: linear-gradient(135deg, #7BA3B8 0%, #A3C1D1 100%);
+  }
+  
+  .cream-gradient {
+    background: linear-gradient(180deg, #FAF8F3 0%, #F5F1E8 100%);
+  }
+  
+  .text-gradient-sage {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #4A7A5C 0%, #6B9F7F 100%);
+  }
+  
+  .btn-primary {
+    @apply bg-sage-DEFAULT text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-sage-dark hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border border-sage-DEFAULT text-sage-DEFAULT px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-sage-50;
+  }
+  
+  .tag-sage {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm bg-sage-100 text-sage-600;
+  }
+  
+  .tag-sky {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm bg-sky-100 text-sky-600;
+  }
+  
+  .tag-gold {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm bg-amber-50 text-amber-700 border border-amber-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
